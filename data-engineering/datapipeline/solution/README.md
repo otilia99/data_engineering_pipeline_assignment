@@ -16,6 +16,8 @@ The results should appear as JSON files in the "results" folder.
 Two observations:
     - I did not get rid of NaNs as I thought they are relevant entries (e.g. a race can have no results in a real scenario), I just handled them where needed. If mentioned otherwise, I usually follow the exact requirements given.
 
+    - I kept each function as atomic as possible, to serve just one clear purpose, with suggestive names as well. I kept the datetime manipulation as a separate step as well, as the requirements might change in the future from a real business perspective.
+    
     - In a real pipeline, I would ask whether the UTC format should be converted to their respective country's timezone based on each race, if needed for showcasing different stats at some point. 
 
     - I left the notebook I worked in before arranging the code in the main.py as it is my usual way of working, in a separate folder named "extra". It is not presentation-ready by any means.
